@@ -1,0 +1,42 @@
+.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-transparent
+{
+    padding-top: 20px;
+}
+
+.collapse.navbar-collapse
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item
+{
+    text-transform: uppercase;
+    font-weight:450;
+    padding: 10px 15px;
+}
+
+ul li a{
+  color: white !important;
+}
+
+ul li a:hover, ul li.active a {
+  color: red !important;
+}
+
+.SectionBG
+{
+    position:relative;
+    height: 100vh;
+    width: auto;
+    background-color: black;
+}
+
+h1
+{
+    padding-top: 120px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
