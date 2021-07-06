@@ -11,7 +11,7 @@ export default function Header() {
           width="100"
           height="50"
           className="d-inline-block align-top"
-          alt="React Bootstrap logo"
+          alt="Main Logo"
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
