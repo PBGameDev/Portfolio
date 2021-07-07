@@ -1,3 +1,14 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.scrollHolder::-webkit-scrollbar {
+  display: none;
+}
+
 .navbar.fixed-top.navbar-expand-lg.navbar-light.bg-transparent
 {
     padding-top: 20px;
@@ -27,7 +38,6 @@ ul li a:hover, ul li.active a {
 
 .SectionBG
 {
-    position:relative;
     height: 100vh;
     width: auto;
     background-color: black;
@@ -40,3 +50,4 @@ h1
     text-align: center;
     text-transform: uppercase;
 }
+
