@@ -5,22 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
-        integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <title>Portfolio | Prasanta Bhattacharya</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
-        integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/index.js"></script>
+    <div id="intro">
+        <h1 class="typing" id="HeaderText"></h1>
+    </div>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
+    <nav id="Navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
             <a class="navbar-brand" href="#Home">Logo Holder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,32 +27,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#Home">Home</a>
+                        <a class="nav-link" href="#Home">.home();</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
+                        <a class="nav-link" href="#About">.about();</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ProfessionalWorks">Professional Works</a>
+                        <a class="nav-link" href="#ProfessionalWorks">.professionalWorks();</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#PersonalProjects">Personal Projects</a>
+                        <a class="nav-link" href="#PersonalProjects">.personalProjects();</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Résumé">Résumé</a>
+                        <a class="nav-link" href="#Résumé">.résumé();</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
+                        <a class="nav-link" href="#Contact">.contact();</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="scrollHolder">
+    <div id="scrollHolder">
         <section class="SectionBG" id="Home">
             <div class="SectionInfo">
-                <h1 id="SectionMainText">Home</h1>
+                <div class="GlitchEffect">
+                    <h1 style="font-size: 50px;" class="GlitchText">I'm Prasanta Bhattacharya</h1>
+                    <h3 class="GlitchText">Game Programmer</h3>
+                </div>
             </div>
         </section>
         <section class="SectionBG" id="About">
@@ -85,6 +84,11 @@
             </div>
         </section>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
