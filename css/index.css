@@ -17,7 +17,6 @@ html {
 .navbar.fixed-top.navbar-expand-lg.navbar-light.bg-transparent
 {
     padding-top: 20px;
-    z-index: 1;
 }
 
 .collapse.navbar-collapse
@@ -51,6 +50,18 @@ ul li a:hover, ul li.active a {
     display: none;   
 }
 
+.SectionInfo
+{
+    display: flex;
+    justify-content: center;
+}
+
+.SectionInfo h1
+{
+    color: white;
+    padding-top: 12vh;
+}
+
 .SectionBG
 {
     height: 100vh;
@@ -60,10 +71,21 @@ ul li a:hover, ul li.active a {
 
 #SectionMainText
 {
-    color: white;
     text-align: center;
-    text-transform: uppercase;
-    padding-top: 10vh;
+    background : repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 300vw 300vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: rbgSlide 20s linear infinite forwards;
+}
+
+@keyframes rbgSlide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 600vw;
+  }
 }
 
 #intro
@@ -73,7 +95,6 @@ ul li a:hover, ul li.active a {
     height: 100vh;
     align-items: center;
     justify-content: center;
-    z-index: 5;
     margin-top: 0vh;
 }
 

@@ -2,11 +2,6 @@ $(document).on("click", "ul li a", function () {
     $(this).closest("li").addClass("active").siblings().removeClass("active");
 })
 
-// new fullpage("#scrollHolder", {
-//     licenseKey: 'YOUR_KEY_HERE',
-//     autoScrolling: true,
-// })
-
 let HeaderText = "cout << \"Hello World\";";
 let LetterIndex = 0;
 let CurrentWord = "";
