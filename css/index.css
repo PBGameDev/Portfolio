@@ -73,10 +73,11 @@ ul li a:hover, ul li.active a {
 {
     text-align: center;
     background : repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
-    background-size: 300vw 300vw;
+    background-size: 200vw 200vw;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    animation: rbgSlide 20s linear infinite forwards;
+    background-clip: text;
+    animation: rbgSlide 15s linear infinite forwards;
 }
 
 @keyframes rbgSlide {
@@ -160,4 +161,16 @@ ul li a:hover, ul li.active a {
 .GlitchEffect h1, h3, h6
 {
     color: white;
+}
+
+.progress
+{
+    width: 80vh;
+    margin: auto;
+    transform: rotateZ(90%);
+}
+
+#scrollProgressBar
+{
+    color: red !important;
 }

@@ -42,3 +42,12 @@ function GlitchEffect() {
     text.start();
     text.reveal(2500);
 };
+
+$(window).on('scroll', function () {
+    var s = $(window).scrollTop(),
+        d = $(document).height(),
+        c = $(window).height();
+
+    var scrollPercent = (s / (d - c)) * 100;
+    $('#scrollProgressBar').attr('aria-valuenow', scrollPercent).css('width', scrollPercent + '%');
+})
