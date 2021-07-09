@@ -10,26 +10,10 @@
 .nav-item
 {
     font-weight:450;
-    padding: 10px 15px;
+    padding:10px 15px;
 }
 
-ul li a{
-  color: white !important;
-}
-
-ul li a:hover, ul li.active a {
-  color: red !important;
-}
-
-#scrollHolder
-{
-    display: none;
-}
-
-#Navbar
-{
-    display: none;   
-}
+ul li a{color:white !important;}ul li a:hover,ul li.active a{color:red !important;}#scrollHolder{display:none;}#Navbar{display:none;}
 
 .SectionInfo
 {
@@ -50,36 +34,10 @@ ul li a:hover, ul li.active a {
     background-color: rgb(25, 25, 25);
 }
 
-#SectionMainText{text-align:center;background:repeating-linear-gradient(-45deg,red 0%,yellow 7.14%,rgb(0,255,0)14.28%,rgb(0,255,255)21.4%,cyan 28.56%,blue 35.7%,magenta 42.84%,red 50%);background-size:200vw 200vw;-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-clip:text;animation:rbgSlide 15s linear infinite forwards;}@keyframes rbgSlide{0%{background-position-x:0%;}100%{background-position-x: 600vw;}}#intro{display:flex;background-color:rgb(230, 230, 230);height:100vh;align-items:center;justify-content:center;margin-top:0vh;}@keyframes pushdivup{0%{margin-top:0vh;}100%{margin-top:-100vh;}}@keyframes invert-colors{0%{filter:invert(0);}100%{filter:invert(1);}}.typing{position:relative;font-family:"Century Gothic",CenturyGothic,Geneva,AppleGothic,sans-serif;font-size:80px;}.typing::after{content:"";position:absolute;width:1px;height:90%;border:1px solid black;right:-4px;animation:cursor-blink 0.7s infinite ease;}@keyframes cursor-blink{0%{opacity:0;}100%{opacity:1;}}.GlitchEffect{margin-top:75vh;margin-left:7vh;position:absolute;}.GlitchEffect h1,h3,h6{color:white;}
+#SectionMainText{text-align:center;background:repeating-linear-gradient(-45deg,red 0%,yellow 7.14%,rgb(0,255,0)14.28%,rgb(0,255,255)21.4%,cyan 28.56%,blue 35.7%,magenta 42.84%,red 50%);background-size:200vw 200vw;-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-clip:text;animation:rbgSlide 15s linear infinite forwards;}@keyframes rbgSlide{0%{background-position-x:0%;}100%{background-position-x: 600vw;}}#intro{display:flex;background-color:rgb(230, 230, 230);height:100vh;align-items:center;justify-content:center;margin-top:0vh;}@keyframes pushdivup{0%{margin-top:0vh;}100%{margin-top:-100vh;}}@keyframes invert-colors{0%{filter:invert(0);}100%{filter:invert(1);}}.typing{position:relative;font-family:"Century Gothic",CenturyGothic,Geneva,AppleGothic,sans-serif;font-size:80px;}.typing::after{content:"";position:absolute;width:1px;height:90%;border:1px solid black;right:-4px;animation:cursor-blink 0.7s infinite ease;}@keyframes cursor-blink{0%{opacity:0;}100%{opacity:1;}}.GlitchEffect{margin-top:75vh;margin-left:7vh;position:absolute;}.GlitchEffect h1,h3,h6{color:white;}.progressBarDivHolder{justify-content:center;}.progress{position:fixed;right:20px;width:50vh;border-radius:5px 5px 0 0;right:-45vh;top:25%;transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-webkit-transform:rotate(90deg);-ms-transform-origin:0% 0%;-moz-transform-origin:0% 0%;-o-transform-origin:0% 0%;-webkit-transform-origin:0% 0%;transform-origin:0% 0%;}#scrollProgressBar{background-color:red !important;}
 
-.progressBarDivHolder
+#HomeBGImg
 {
-    justify-content: center;
-}
-
-.progress
-{
-    position: fixed;
-    right: 20px;
-    width: 50vh;
-    border-radius: 5px 5px 0 0;
-    right: -45vh;
-    top: 25%;
-
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-
-    -ms-transform-origin: 0% 0%;
-    -moz-transform-origin: 0% 0%;
-    -o-transform-origin: 0% 0%;
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-}
-
-#scrollProgressBar
-{
-    background-color: red !important;
+    height: 100px;
+    width: 100px;
 }
