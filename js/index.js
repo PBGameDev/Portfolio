@@ -1,5 +1,9 @@
-$(document).on("click", "ul li a", function () {
-    $(this).closest("li").addClass("active").siblings().removeClass("active");
+var scrollPercent;
+
+$(document).on("click", "a", function () {
+    if ($(this).attr("href") == "#Home" && scrollPercent >= 16.66) {
+        GlitchEffect();
+    }
 })
 
 let HeaderText = "cout << \"Hello World\";";
@@ -44,10 +48,33 @@ function GlitchEffect() {
 };
 
 $(window).on('scroll', function () {
+    prevScrollPrecent = scrollPercent;
     var s = $(window).scrollTop(),
         d = $(document).height(),
         c = $(window).height();
 
-    var scrollPercent = (s / (d - c)) * 100;
+    scrollPercent = (s / (d - c)) * 100;
     $('#scrollProgressBar').attr('aria-valuenow', scrollPercent).css('width', scrollPercent + '%');
+    changeSectionSelectionOnScroll();
 })
+
+function changeSectionSelectionOnScroll() {
+    if (scrollPercent >= 0 && scrollPercent < 16.66) {
+        $('a[href*="#Home"]').closest("li").addClass("active").siblings().removeClass("active");
+    }
+    else if (scrollPercent >= 16.66 && scrollPercent < 33.33) {
+        $('a[href*="#About"]').closest("li").addClass("active").siblings().removeClass("active");
+    }
+    else if (scrollPercent >= 33.33 && scrollPercent < 49.98) {
+        $('a[href*="#ProfessionalWorks"]').closest("li").addClass("active").siblings().removeClass("active");
+    }
+    else if (scrollPercent >= 49.98 && scrollPercent < 66.64) {
+        $('a[href*="#PersonalProjects"]').closest("li").addClass("active").siblings().removeClass("active");
+    }
+    else if (scrollPercent >= 66.64 && scrollPercent < 83.33) {
+        $('a[href*="#Résumé"]').closest("li").addClass("active").siblings().removeClass("active");
+    }
+    else if (scrollPercent >= 83.33 && scrollPercent <= 100) {
+        $('a[href*="#Contact"]').closest("li").addClass("active").siblings().removeClass("active");
+    }
+}
