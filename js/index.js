@@ -6,7 +6,7 @@ $(document).on("click", "a", function () {
     }
 })
 
-let HeaderText = "cout << \"Hello World\";";
+let HeaderText = "website.open(portfolio);";
 let LetterIndex = 0;
 let CurrentWord = "";
 (function typeHeader() {
@@ -20,7 +20,6 @@ let CurrentWord = "";
         setTimeout(typeHeader, 80);
     }
 })();
-
 
 function OnTypeFinish() {
     document.getElementById('intro').style.animation = "invert-colors 0.5s 1 ease";
@@ -40,7 +39,7 @@ function OnTypeFinish() {
 function GlitchEffect() {
     const text = baffle(".GlitchText");
     text.set({
-        characters: "AbCdEfGhIjKlMnOpQrStUvWxYz/?.,<>'[}:;{",
+        characters: "AbCdEfGhIjKlMnOpQrStUvWxYz<,>.?/':;{}[]",
         speed: 150
     });
     text.start();
