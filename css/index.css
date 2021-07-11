@@ -146,7 +146,7 @@ ul li a{color:white !important;}ul li a:hover,ul li.active a{color:red !importan
     #GlitchEffectName{
     color:white;
     position: absolute;
-    font-size: 7vw;
+    font-size: 6.5vw;
     transform: translateY(-0.5vw);
     font-family: 'Playfair Display', serif;
 }
@@ -155,7 +155,7 @@ ul li a{color:white !important;}ul li a:hover,ul li.active a{color:red !importan
     color:white;
     position: absolute;
     font-size: 3.5vw;
-    transform: translateY(5.5vw);
+    transform: translateY(5.8vw);
     font-family: 'Playfair Display', serif;
 }
 
