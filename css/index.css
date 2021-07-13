@@ -3,14 +3,6 @@
 /* Fixed */
 #intro{display:flex;background-color:rgb(225, 225, 225);height:100vh;align-items:center;justify-content:center;margin-top:0vh;}@keyframes pushdivup{0%{margin-top:0vh;}100%{margin-top:-100vh;}}@keyframes invert-colors{0%{filter:invert(0);}100%{filter:invert(1);}}.typing{position:relative;font-size:4.2vw;}.typing::after{content:"";position:absolute;width:1px;height:90%;border:1px solid black;right:-4px;animation:cursor-blink 0.7s infinite ease;}@keyframes cursor-blink{0%{opacity:0;}100%{opacity:1;}}#MenuButton{display:none;position:fixed;top:3vh;right:2vw;background-color:rgb(30,30,30);border:2px solid rgb(0,255,255);}#MenuButton:hover{box-shadow:0 0 5px rgb(0,255,255),0 0 10px rgb(0,255,255),0 0 25px rgb(0,255,255);}.nav-link{color:white !important;}.nav-link:hover{color:red !important;}#scrollHolder{display:none;}#offcanvasRight{background-color:rgb(30,30,30);}#offcanvasRightLabel{font-size:250%;font-family:'Playfair Display',serif;color:white;}.offcanvas-body ul{list-style-type:none;}.offcanvas-body ul li a{font-size:175%;}
 
-.stars
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
-}
-
 .SectionInfo
 {
     display: flex;
