@@ -99,6 +99,7 @@ window.addEventListener('wheel', function (event) {
                 currentSection++;
             }
         }
+        pageInEffect(currentSection);
         window.location.href = sections[currentSection];
         setTimeout(() => {
             sectionScrolling = false;
@@ -121,7 +122,7 @@ function pageInEffect(a) {
 
     }
     else if (a == 2) {
-
+        HeaderSwipePW();
     }
     else if (a == 3) {
 
@@ -156,3 +157,14 @@ function HomePageRevealButton() {
         document.getElementById("HomePageButtons").style.animation = "";
     }, 1500);
 }
+
+function HeaderSwipePW() {    
+    document.getElementById("SwiperHeadPW").style.animation = "swipe 1s ease-out";
+    document.getElementById("SwiperSubPW").style.animation = "swipe 1s ease-out";
+    setTimeout(() => {
+        document.getElementById("SwiperHeadPW").style.animation = "";
+        document.getElementById("SwiperSubPW").style.animation = "";
+    }, 2000);
+}
+
+
