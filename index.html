@@ -15,42 +15,44 @@
 </head>
 
 <body>
+    <canvas class="stars"></canvas>
+</body>
+
+<!-- <body>
     <div id="intro">
         <h1 class="typing" id="HeaderText"></h1>
     </div>
 
-    <nav id="Navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#Home">Logo Holder</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#Home">.home();</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">.about();</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ProfessionalWorks">.professionalWorks();</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#PersonalProjects">.personalProjects();</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Résumé">.résumé();</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">.contact();</a>
-                    </li>
-                </ul>
-            </div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight" id="MenuButton">.menu();</button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">portfolio.menu();</h5>
         </div>
-    </nav>
+        <div class="offcanvas-body">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Home">.home();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#About">.aboutMe();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#ProfessionalWorks">.professionalWorks();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#PersonalProjects">.personalProjects();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Résumé">.résumé();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Contact">.contact();</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <div id="scrollHolder">
         <div id="progressBarDivHolder">
@@ -59,7 +61,7 @@
                     aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
-
+        <canvas class="stars"></canvas>
         <section class="SectionBG" id="Home">
             <div class="SectionInfoHome">
                 <div id="HomeHeaderHolder">
@@ -67,24 +69,43 @@
                     <div class="GlitchText" id="GlitchEffectName">I'm Prasanta Bhattacharya</div>
                     <div class="GlitchText" id="GlitchEffectAbout">Game Developer & Game Programmer</div>
                 </div>
-
-                <!-- <div class="homePageIntro">
-                    <p class="HomeIntroNormalTexts">I'm a </p>
-                    <p class="HomeIntroCreative" data-text="creative">creative</p>
-                    <p class="HomeIntroNormalTexts">person and a very</p>
-                    quick learner.
-                    Don't
-                    believe me? With no experience before, I
-                    learned HTML, CSS, JS, Bootstrap and other libraries and made this website
-                    within a month from stratch. Saying that I'm not interested in Web Dev at all and never doing this
-                    ever again. Which brings us to what I'm good at.
-                </div> -->
+                <div id="HomeBodyHolder">
+                    <p class="HomeIntroNormalTexts">
+                        I'm
+                        <CUSTOM class="HomeIntroCreative" data-text="creative,">creative,</CUSTOM>
+                        and a very
+                        <CUSTOM class="HomeIntroQL" data-shadow="quick learner.">quick learner.</CUSTOM>
+                        Don't believe me?
+                        Without any previous experience, I learned
+                        <CUSTOM style="color:#f06529">HTML</CUSTOM>,
+                        <CUSTOM style="color:#2965f1">CSS</CUSTOM> and
+                        <CUSTOM style="color:#F0DB4F">JavaScript</CUSTOM> and made
+                        this website from scratch within a month. Saying that, I'm not good at Web Dev and will
+                        never make a website ever again. Which brings us to,
+                        <CUSTOM class="HomeIntroGli">
+                            <span aria-hidden="true">what am I good at?</span>
+                            <span aria-hidden="true">what am I good at?</span>
+                            what am I good at?
+                        </CUSTOM>
+                    </p>
+                </div>
+                <div id="HomePageButtons">
+                    <div class="NextButton" style="margin-right:5vw;" onclick="BodyButtonClicks(1)">
+                        <h3>.aboutMe();</h3>
+                    </div>
+                    <div class="NextButton" style="margin-right:5vw;" onclick="BodyButtonClicks(2)">
+                        <h3>.professionalWorks();</h3>
+                    </div>
+                    <div class="NextButton" onclick="BodyButtonClicks(3)">
+                        <h3>.personalProjects();</h3>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="SectionBG" id="About">
             <div class="SectionInfo">
                 <h1>rgb.setText("</h1>
-                <h1 id="SectionMainText">about</h1>
+                <h1 id="SectionMainText">aboutMe</h1>
                 <h1>");</h1>
             </div>
         </section>
@@ -121,6 +142,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/index.js"></script>
-</body>
+</body> -->
 
 </html>
