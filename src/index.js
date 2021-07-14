@@ -1,6 +1,7 @@
-var scrollPercent;
+var scrollPercent = 0;
 var sections = ["#Home", "#About", "#ProfessionalWorks", "#PersonalProjects", "#Résumé", "#Contact"];
 var currentSection = 0;
+var prevSection = 0;
 var sectionScrolling = false;
 var Glitching = false;
 
@@ -12,25 +13,25 @@ $(document).on("click", "a", function () {
         currentSection = 0;
     }
     else if ($(this).attr("href") == "#About") {
-        if (scrollPercent < 16.66 && scrollPercent >= 33.33) {
+        if (scrollPercent < 16.66 || scrollPercent >= 33.33) {
             pageInEffect(1);
         }
         currentSection = 1;
     }
     else if ($(this).attr("href") == "#ProfessionalWorks") {
-        if (scrollPercent < 33.33 && scrollPercent >= 49.98) {
+        if (scrollPercent < 33.33 || scrollPercent >= 49.98) {
             pageInEffect(2);
         }
         currentSection = 2;
     }
     else if ($(this).attr("href") == "#PersonalProjects") {
-        if (scrollPercent < 49.98 && scrollPercent >= 66.64) {
+        if (scrollPercent < 49.98 || scrollPercent >= 66.64) {
             pageInEffect(3);
         }
         currentSection = 3;
     }
     else if ($(this).attr("href") == "#Résumé") {
-        if (scrollPercent < 66.64 && scrollPercent >= 83.33) {
+        if (scrollPercent < 66.64 || scrollPercent >= 83.33) {
             pageInEffect(4);
         }
         currentSection = 4;
@@ -87,6 +88,7 @@ $(window).on('scroll', function () {
 })
 
 window.addEventListener('wheel', function (event) {
+    prevSection = currentSection;
     if (!sectionScrolling) {
         sectionScrolling = true;
         if (event.deltaY < 0) {
@@ -99,7 +101,9 @@ window.addEventListener('wheel', function (event) {
                 currentSection++;
             }
         }
-        pageInEffect(currentSection);
+        if (prevSection != currentSection) {
+            pageInEffect(currentSection);
+        }
         window.location.href = sections[currentSection];
         setTimeout(() => {
             sectionScrolling = false;
@@ -112,6 +116,12 @@ function BodyButtonClicks(i) {
     window.location.href = sections[currentSection];
     pageInEffect(currentSection);
 }
+
+(function CheckWindowSize() {
+    if (window.screen.width <= 1000) {
+        alert("Please use a computer and a fullscreened browser.");
+    }
+})();
 
 function pageInEffect(a) {
     if (a == 0) {
@@ -161,9 +171,11 @@ function HomePageRevealButton() {
 function HeaderSwipePW() {    
     document.getElementById("SwiperHeadPW").style.animation = "swipe 1s ease-out";
     document.getElementById("SwiperSubPW").style.animation = "swipe 1s ease-out";
+    document.getElementById("CardsHolderPW").style.animation = "swipeUpWithOpa 1s ease-in";
     setTimeout(() => {
         document.getElementById("SwiperHeadPW").style.animation = "";
         document.getElementById("SwiperSubPW").style.animation = "";
+        document.getElementById("CardsHolderPW").style.animation = "";
     }, 2000);
 }
 

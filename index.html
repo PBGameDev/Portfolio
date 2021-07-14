@@ -18,37 +18,6 @@
         <h1 class="typing" id="HeaderText"></h1>
     </div>
 
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight" id="MenuButton">.menu();</button>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">portfolio.menu();</h5>
-        </div>
-        <div class="offcanvas-body">
-            <ul>
-                <li>
-                    <a class="nav-link" href="#Home">.home();</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#About">.aboutMe();</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#ProfessionalWorks">.professionalWorks();</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#PersonalProjects">.personalProjects();</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#Résumé">.résumé();</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#Contact">.contact();</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <div id="scrollHolder">
         <div id="progressBarDivHolder">
             <div class="progress" id="ProgressBarDiv" style="height: 1px;">
@@ -97,12 +66,6 @@
             </div>
         </section>
         <section class="SectionBG" id="About">
-            <div id="HeaderHolder">
-                <h1 id="SectionInfoTop">
-                    <CUSTOM style="color: #01fe87;">portfolio</CUSTOM>.<CUSTOM style="color:#f06529;">aboutMe</CUSTOM>(){
-                </h1>
-                <h1 id="SectionInfoBottom">}</h1>
-            </div>
             <div class="ContentHolder">
                 <div class="Content">
                     <div class="HeaderReveal">
@@ -112,34 +75,50 @@
             </div>
         </section>
         <section class="SectionBG" id="ProfessionalWorks">
-            <div id="HeaderHolder">
-                <h1 id="SectionInfoTop">
-                    <CUSTOM style="color: #01fe87;">portfolio</CUSTOM>.<CUSTOM style="color:#f06529;">professionalWorks</CUSTOM>(){
-                </h1>
-                <h1 id="SectionInfoBottom">}</h1>
+            <div id="SwipeWrapperPW">
+                <div id="swipePW">
+                    <h1 id="OpaAnimMainPW">Professional Works
+                        <div id="SwiperHeadPW"></div>
+                    </h1>
+                </div>
+                <div id="swipe-whitePW">
+                    <h3 id="OpaAnimSubPW">3 Studios
+                        <div id="SwiperSubPW"></div>
+                    </h3>
+                </div>
             </div>
             <div class="ContentHolder">
-                <div class="SwipeWrapperPW">
-                    <div id="swipePW">
-                        <h1 id="OpaAnimMainPW">SWA Studio
-                            <div id="SwiperHeadPW"></div>
-                        </h1>
+                <div id="CardsHolderPW">
+                    <div class="Card">
+                        <div class="CardContent">
+                            <div class="CardFront">
+                                <img class="CardImg" src="./img/TALogo.jpg" alt="TA Logo">
+                                <h3 class="CardTitle">Tranceverse - Awakening (2020)</h3>
+                                <p class="CardSubtitle">Action / Shooter / Survival</p>
+                                <p class="CardSubtitle">SWA Studio (May 2020 - Present)</p>
+                            </div>
+                            <div class="CardBack">
+                                <p class="CardBody">This will contain more information about the game but as a summary</p>
+                            </div>
+                        </div>
                     </div>
-                    <div id="swipe-whitePW">
-                        <h3 id="OpaAnimSubPW">May 2019 - Present
-                            <div id="SwiperSubPW"></div>
-                        </h3>
+                    <div class="Card">
+                        <div class="CardContent">
+                            <div class="CardFront">
+                                <img class="CardImg" src="./img/TALogo.jpg" alt="TA Logo">
+                                <h3 class="CardTitle">Simple Piano (2019)</h3>
+                                <p class="CardSubtitle">Musical</p>
+                                <p class="CardSubtitle">JR Creations (Sep 2019 - Mar 2020)</p>
+                            </div>
+                            <div class="CardBack">
+                                <p class="CardBody">This will contain more information about the game but as a summary</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="SectionBG" id="PersonalProjects">
-            <div id="HeaderHolder">
-                <h1 id="SectionInfoTop">
-                    <CUSTOM style="color: #01fe87;">portfolio</CUSTOM>.<CUSTOM style="color:#f06529;">personalProjects</CUSTOM>(){
-                </h1>
-                <h1 id="SectionInfoBottom">}</h1>
-            </div>
             <div class="ContentHolder">
                 <div class="Content">
                     <div class="HeaderReveal">
@@ -149,12 +128,6 @@
             </div>
         </section>
         <section class="SectionBG" id="Résumé">
-            <div id="HeaderHolder">
-                <h1 id="SectionInfoTop">
-                    <CUSTOM style="color: #01fe87;">portfolio</CUSTOM>.<CUSTOM style="color:#f06529;">résumé</CUSTOM>(){
-                </h1>
-                <h1 id="SectionInfoBottom">}</h1>
-            </div>
         </section>
         <section class="SectionBG" id="Contact">
             <div id="HeaderHolder">
@@ -164,6 +137,37 @@
                 <h1 id="SectionInfoBottom">}</h1>
             </div>
         </section>
+    </div>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight" id="MenuButton">.menu();</button>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">portfolio.menu();</h5>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Home">.home();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#About">.aboutMe();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#ProfessionalWorks">.professionalWorks();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#PersonalProjects">.personalProjects();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Résumé">.résumé();</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Contact">.contact();</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
